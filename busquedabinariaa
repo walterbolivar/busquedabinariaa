@@ -1,0 +1,87 @@
+#include "stdafx.h"
+	#include <iostream>
+	#include "conio.h"
+	#include "math.h"
+	#define MAX 100
+	
+	using namespace std;
+	
+	void cargarvector(int a[],int tam);
+	void mostrarvector(int a[],int tam);
+	void burbuja(int a[],int tam);
+	int busquedadbinaria(int a[],int tam,int clave);
+	
+	int main()
+	{
+	int T[MAX],n;
+	do{
+	cout<<"Ingresar el valor: ";
+	cin>>n;
+	} while
+	((n<=0)||(n>MAX));
+	
+	cargarvector(T,n);
+	burbuja(T,n);
+	mostrarvector(T,n);
+	busquedadbinaria(T,n);
+	getch();
+	return 0;
+	}
+	
+	
+	void cargarvector(int a[],int tam)
+	{
+	for (int i=0;i<tam;i++)
+	{
+	cout<<"Ingresar a["<<i<<"]";
+	cin>>a[i];
+	}
+	}
+	
+	void mostrarvector(int a[],int tam)
+	{
+	for (int i=0;i<tam;i++)
+	{
+	cout<<"a["<<i<<"]"<<a[i]<<endl;
+	cin>>a[i];
+	}
+	}
+	void burbuja(int a[],int tam)
+	{
+	int aux;
+	for (int i=0;i< tam-1;i++)
+	{
+	for (int j=i+1;j<tam;j++)
+	{if a[i]>a[j];
+	{aux=a[i];
+	a[i]=a[j];
+	a[j]=aux };
+	}
+	}
+	}
+
+	void busquedadbinaria(int a[],int tam,int clave)
+	{
+		int ARRIBA=tam-1;
+		int ABAJO=0;
+		int CENTRO;
+		while (ABAJO <=ARRIBA){
+
+			CENTRO=(ARRIBA+ABAJO)/2;
+		if(aux<=vector[CENTRAL]){
+			ARRIBA=CENTRAL-1;
+		else {
+		    ABAJO=CENTRAL+1;
+		}
+
+		for(i=j-1;i>=ABAJO;i--){
+			v[i+1]=vector[i];
+		}
+		v[abajo]=aux;
+		}
+		}
+		
+
+
+
+
